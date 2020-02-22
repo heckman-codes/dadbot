@@ -14,7 +14,7 @@ bot.on('message', msg => {
     console.log(msg.content)
     console.log(msg.author);
 
-    if (msg.author.name === "<@175647516329508864>") {
+    if (msg.author.id === "175647516329508864") {
         msg.reply("You're adopted.")
 
     } else if (msg.content.includes("I'm")) {
