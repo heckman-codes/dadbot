@@ -21,7 +21,7 @@ bot.on('message', msg => {
 
 
 
-    if (msg.content === "<@&680554847166267437>" + " joke") {
+    if (msg.content === "<DadBot> joke") {
         msg.reply(randomJoke);
     }
 
