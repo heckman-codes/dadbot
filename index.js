@@ -13,7 +13,11 @@ bot.on('ready', () => {
 bot.on('message', msg => {
     console.log(msg.content)
     console.log(msg.content.indexOf("I'm"));
-    if (msg.content.includes("I'm")) {
+
+    if (msg.author === "<@175647516329508864>") {
+        msg.reply("You're adopted.")
+
+    } else if (msg.content.includes("I'm")) {
         if (msg.author.bot) return
         var message = msg.content.replace("I'm", '');
         var newMessage = "Hi," + message + ", I'm Dad!"
