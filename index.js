@@ -17,11 +17,11 @@ bot.on('message', msg => {
     console.log(msg.author.id);
 
     var randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
-    console.log(randomJoke);
 
 
 
-    if (msg.content === "<DadBot> joke") {
+
+    if (msg.content === "@Dad Bot joke") {
         msg.reply(randomJoke);
     }
 
