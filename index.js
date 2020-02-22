@@ -25,10 +25,11 @@ bot.on('message', msg => {
         msg.reply(randomJoke);
     }
 
-    if (msg.author.id === "175647516329508864") {
-        msg.reply("You're adopted.")
+    // if (msg.author.id === "175647516329508864") {
+    //     msg.reply("You're adopted.")
 
-    } else if (msg.content.includes("I'm")) {
+    // } else
+    if (msg.content.includes("I'm")) {
         if (msg.author.bot) return
         var message = msg.content.replace("I'm", '');
         var newMessage = "Hi," + message + ", I'm Dad!"
